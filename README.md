@@ -1,35 +1,52 @@
-# ~tutorial vote app ~part2
+## í”„ë¡œì íŠ¸ ìƒì„±
 
-## python °¡»óÈ¯°æ ¼³Á¤
-python3 -m venv env-name
+---
 
-## °¡»óÈ¯°æ ½ÇÇà
-### windows
-env-name\Scripts\activate.bat
-### mac or linux
-source env-name\bin\cativate
+```bash
+django-admin startproject [site-name]
+```
 
-## ÇÁ·ÎÁ§Æ® »ý¼º
-django-admin startproject site-name
+## ê°œë°œ ì„œë²„ ì‹¤í–‰
 
-## À¥ °³¹ß ¼­¹ö ½ÇÇà (½ÇÀç ¹èÆ÷´Â À¥ ¼­¹ö·Î ¹Ù²ã¼­ ¿Ã·Á¾ß ÇÔ!!)
+---
+
+- ìš´ì˜ì‚¬ì´íŠ¸ ë°°í¬ëŠ” ì›¹ì„œë²„ì— ë°”ê¿”ì„œ ì˜¬ë ¤ì•¼í•œë‹¤.
+
+```bash
 python manage.py runserver
+```
 
-## ÇÁ·ÎÁ§Æ® ³» ¾Û »ý¼º!
-python manage.py startapp app-name
+## ì•± ìƒì„± (in í”„ë¡œì íŠ¸)
 
-## migration °ü·Ã ¸í·É (app-name/models.py ¹× site-name/settings.py ¼öÁ¤ ÈÄ)
-### migration »ý¼º
-python manage.py makemigrations app-name
-### migration ½ÇÇà
+---
+
+```bash
+python manage.py startapp [app-name]
+```
+
+## Migration
+
+---
+
+```bash
+# migration ìƒì„±
+python manage.py makemigrations [app-name]
+# migration ì‹¤í–‰
 python manage.py migrate
+```
 
-## ½© ½ÇÇà
+## Django Shell ì‹¤í–‰
+
+---
+
+```bash
 python manage.py shell
+```
 
-## °ü¸®ÀÚ ½ÇÇà
+## ì–´ë“œë¯¼ íŽ˜ì´ì§€ ì‹¤í–‰
+
+---
+
+```bash
 python manage.py createsuperuser
->> id, email, password ¼³Á¤
-
-
-
+```
